@@ -19,7 +19,7 @@ namespace Phone
                         break;
 
                     case "2":
-                    Bank.basic_emulator();
+                        Bank.basic_emulator();
                         break;
 
                     case "выход":

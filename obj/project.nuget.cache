@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "2mNdhe875JlJpiJcEp1Uy3YEUS55xhQ8oYDwnypujHxSq1kUybUHMMXdySGwrzGT1NpacXr8fgeLdaRbTxDCVw==",
+  "dgSpecHash": "uXsk1asUkPzVdJtHHNMChRKAKWqeiOkaqqRhK+WU5GfTkolbNZ+wux9q9vJRTzSsnrlgOyTxpJVATDPheehg4A==",
   "success": true,
   "projectFilePath": "/home/mat/mprg/dotnet/3kurs/Michael/Michael.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/mat/.nuget/packages/dotenv.net/4.2.0/dotenv.net.4.2.0.nupkg.sha512"
+  ],
   "logs": []
 }

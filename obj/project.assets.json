@@ -1,11 +1,38 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "dotenv.net/4.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.1/dotenv.net.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/dotenv.net.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "dotenv.net/4.2.0": {
+      "sha512": "3j0Vw0f8Hn0NQyXFqbURgNifPXL9hMLrNJ/f7+uOj8LGxlUdNCU5mErPa52UqHn8RocjUvMS/UnakCr4Fk8mMQ==",
+      "type": "package",
+      "path": "dotenv.net/4.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "dotenv.net.4.2.0.nupkg.sha512",
+        "dotenv.net.nuspec",
+        "lib/netstandard2.0/dotenv.net.dll",
+        "lib/netstandard2.1/dotenv.net.dll"
+      ]
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "dotenv.net >= 4.2.0"
+    ]
   },
   "packageFolders": {
     "/home/mat/.nuget/packages/": {}
@@ -43,6 +70,12 @@
     "frameworks": {
       "net8.0": {
         "targetAlias": "net8.0",
+        "dependencies": {
+          "dotenv.net": {
+            "target": "Package",
+            "version": "[4.2.0, )"
+          }
+        },
         "imports": [
           "net461",
           "net462",
