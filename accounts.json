@@ -1,0 +1,26 @@
+[
+  {
+    "Id": 1,
+    "Full_owner_name": "admin",
+    "Balance": 1911,
+    "Currency": 0
+  },
+  {
+    "Id": 2,
+    "Full_owner_name": "admin",
+    "Balance": 2000,
+    "Currency": 1
+  },
+  {
+    "Id": 3,
+    "Full_owner_name": "admin",
+    "Balance": 1000,
+    "Currency": 2
+  },
+  {
+    "Id": 4,
+    "Full_owner_name": "admin",
+    "Balance": 99000,
+    "Currency": 1
+  }
+]

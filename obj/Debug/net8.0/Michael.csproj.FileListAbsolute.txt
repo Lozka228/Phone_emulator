@@ -12,3 +12,7 @@
 /home/mat/mprg/dotnet/3kurs/Michael/obj/Debug/net8.0/Michael.pdb
 /home/mat/mprg/dotnet/3kurs/Michael/obj/Debug/net8.0/Michael.genruntimeconfig.cache
 /home/mat/mprg/dotnet/3kurs/Michael/obj/Debug/net8.0/ref/Michael.dll
+/home/mat/mprg/dotnet/3kurs/Michael/bin/Debug/net8.0/dotenv.net.dll
+/home/mat/mprg/dotnet/3kurs/Michael/obj/Debug/net8.0/Michael.csproj.AssemblyReference.cache
+/home/mat/mprg/dotnet/3kurs/Michael/obj/Debug/net8.0/Michael.sourcelink.json
+/home/mat/mprg/dotnet/3kurs/Michael/obj/Debug/net8.0/Michael.csproj.CopyComplete

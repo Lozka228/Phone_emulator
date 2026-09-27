@@ -49,11 +49,12 @@ namespace Phone
         {
             bool _bank = true;
 
+            var accounts = AccountStorage.Load();
             while (_bank)
             {
                 print_menu();
 
-                var accounts = AccountStorage.Load();
+                
 
                 string opt = Console.ReadLine();
 
@@ -61,15 +62,15 @@ namespace Phone
                 {
                     case "0":
                         _bank = false;
-                        return;
-                    case "1":
-                        var loaded = AccountStorage.Load();
+                        continue;
 
-                        foreach (var acc in loaded)
+                    case "1":
+                        foreach (var acc in accounts)
                         {
-                            Console.WriteLine($"{acc.Full_owner_name}: {acc.Balance} {acc.Currency}");
+                            Console.WriteLine($"№{acc.Id} {acc.Full_owner_name}: {acc.Balance} {acc.Currency}");
                         }
                         break;
+
                     case "2":
                         // Создать счет
 
@@ -131,7 +132,8 @@ namespace Phone
                         Operation.Transfer(accounts, from, to, amount_transfer);
                         break;
                 }
-
+                Thread.Sleep(3000);
+                Console.Clear();
                 AccountStorage.Save(accounts);
             }
         }

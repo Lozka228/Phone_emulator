@@ -37,7 +37,7 @@ namespace Phone
                         break;
 
                     default:
-                        Console.WriteLine($"Низвестная операция '{op}'");
+                        Console.WriteLine($"Неизвестная операция '{op}'");
                         break;
                 }
             }

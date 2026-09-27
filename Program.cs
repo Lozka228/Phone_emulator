@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace Phone
 {
@@ -9,6 +10,7 @@ namespace Phone
             bool _pragma = true;
             while (_pragma)
             {
+                Console.Clear();
                 Console.WriteLine($"Привет, куда отправимся?\n1.Калькулятор\n2.Банковское приложение");
 
                 String answ = Console.ReadLine();
@@ -32,8 +34,9 @@ namespace Phone
                 }
 
                 Console.WriteLine("Выходим в главное меню...");
+                Thread.Sleep(3000);
             }
-            Console.WriteLine("Конец порграммы.");
+            Console.WriteLine("Конец программы.");
         }
     }
 }
