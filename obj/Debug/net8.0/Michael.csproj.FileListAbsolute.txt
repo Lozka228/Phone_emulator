@@ -1,0 +1,14 @@
+/home/mat/mprg/dotnet/3kurs/Michael/bin/Debug/net8.0/Michael
+/home/mat/mprg/dotnet/3kurs/Michael/bin/Debug/net8.0/Michael.deps.json
+/home/mat/mprg/dotnet/3kurs/Michael/bin/Debug/net8.0/Michael.runtimeconfig.json
+/home/mat/mprg/dotnet/3kurs/Michael/bin/Debug/net8.0/Michael.dll
+/home/mat/mprg/dotnet/3kurs/Michael/bin/Debug/net8.0/Michael.pdb
+/home/mat/mprg/dotnet/3kurs/Michael/obj/Debug/net8.0/Michael.GeneratedMSBuildEditorConfig.editorconfig
+/home/mat/mprg/dotnet/3kurs/Michael/obj/Debug/net8.0/Michael.AssemblyInfoInputs.cache
+/home/mat/mprg/dotnet/3kurs/Michael/obj/Debug/net8.0/Michael.AssemblyInfo.cs
+/home/mat/mprg/dotnet/3kurs/Michael/obj/Debug/net8.0/Michael.csproj.CoreCompileInputs.cache
+/home/mat/mprg/dotnet/3kurs/Michael/obj/Debug/net8.0/Michael.dll
+/home/mat/mprg/dotnet/3kurs/Michael/obj/Debug/net8.0/refint/Michael.dll
+/home/mat/mprg/dotnet/3kurs/Michael/obj/Debug/net8.0/Michael.pdb
+/home/mat/mprg/dotnet/3kurs/Michael/obj/Debug/net8.0/Michael.genruntimeconfig.cache
+/home/mat/mprg/dotnet/3kurs/Michael/obj/Debug/net8.0/ref/Michael.dll
