@@ -53,6 +53,8 @@ namespace Phone
             {
                 print_menu();
 
+                var accounts = AccountStorage.Load();
+
                 string opt = Console.ReadLine();
 
                 switch (opt)
@@ -61,16 +63,76 @@ namespace Phone
                         _bank = false;
                         return;
                     case "1":
+                        var loaded = AccountStorage.Load();
+
+                        foreach (var acc in loaded)
+                        {
+                            Console.WriteLine($"{acc.Full_owner_name}: {acc.Balance} {acc.Currency}");
+                        }
                         break;
                     case "2":
+                        // Создать счет
+
+                        string name = Environment.GetEnvironmentVariable("login");
+                        Console.WriteLine("Введите сумму:");
+                        decimal balance = Convert.ToDecimal(Console.ReadLine());
+                        Console.WriteLine("Введите валюту (1. USD 2. EUR 3. RUB):");
+                        string currency_str = Console.ReadLine();
+                        _Currency currency = _Currency.USD;
+
+                        switch (currency_str)
+                        {
+                            case "1": 
+                                currency = _Currency.USD;
+                                break;
+                            case "2":
+                                currency = _Currency.EUR;
+                                break;
+                            case "3":
+                                currency = _Currency.RUB;
+                                break;
+                            default:
+                                break;
+                        }
+
+                        accounts.Add(new Account
+                        {
+                            Full_owner_name = name,
+                            Balance = balance,
+                            Currency = currency
+                        });
+
+                        Console.WriteLine("Счет был успешно создан!");
                         break;
                     case "3":
+                        Console.WriteLine("Введите номер счета:");
+                        int id = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Введите сумму для пополнения:");
+                        decimal amount = Convert.ToDecimal(Console.ReadLine());
+
+                        Operation.Deposit(accounts, id, amount);
                         break;
                     case "4":
+                        Console.WriteLine("Введите номер счета:");
+                        int idq = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Введите сумму для снятия:");
+                        decimal amountq = Convert.ToDecimal(Console.ReadLine());
+
+                        Operation.Withdraw(accounts, idq, amountq);
                         break;
                     case "5":
+                        Console.WriteLine("Введите номер счета, с которого снимаем:");
+                        int from = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Введите номер счета, на который переводим:");
+                        int to = Convert.ToInt32(Console.ReadLine());
+                        Console.WriteLine("Введите сумму для перевода:");
+                        decimal amount_transfer = Convert.ToDecimal(Console.ReadLine());
+
+                        Operation.Transfer(accounts, from, to, amount_transfer);
                         break;
                 }
+
+                AccountStorage.Save(accounts);
             }
         }
     }
